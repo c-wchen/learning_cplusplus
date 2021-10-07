@@ -5,8 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - 生成和调试活动文件",
+            "name": "cplusplus_debug",
             "type": "cppdbg",
+            "preLaunchTask": "cplusplus",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}",
             "args": [],
@@ -22,7 +23,6 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ 生成活动文件",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.8.0)
+project(cmake_project)
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+add_library(libmymath SHARED ${PROJECT_SOURCE_DIR}/src/add.c ${PROJECT_SOURCE_DIR}/src/sub.c)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
+link_libraries(libmymath)
+add_executable(main ${PROJECT_SOURCE_DIR}/src/main.c)

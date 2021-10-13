@@ -8,3 +8,13 @@
     "cpp": "cd $dir && g++ $fileName -o ./build/$fileNameWithoutExt && $dir/build/$fileNameWithoutExt"
 }
 ```
+
+## 运行环境
+> Linux Ubuntu
+
+## CMake构建
+```bash
+# cd 项目目录, 需要安装cmake & make
+cmake .
+make
+```
